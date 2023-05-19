@@ -52,7 +52,7 @@ body{
     display: flex;
     /* border: 1px solid black; */
     margin-top: 0.1rem;
-    width: 600px;
+    width: 650px;
     height: 45px;
     align-items: center;
   
@@ -73,6 +73,13 @@ body{
     position: relative;
   top:1px;
     width: 12px;
+}
+.ver-line{
+    
+    border-left: 0.1px solid black;
+    margin-right: 15px;
+    height:45px;
+
 }
 
 
