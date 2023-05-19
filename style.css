@@ -1,3 +1,10 @@
+:root{
+
+    --sub_t-color:#696464;
+    --title-F-size:20px;
+    --sub_t_F-size:15px;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -6,14 +13,20 @@ body{
     background-color: #F3F2EF;
 }
 
-/* header section  Navbar CSS  */
+/* ************** style for header section start   --> navbar ************* */
+
 .nav-content{
     display: flex;
     justify-content: space-around;
     background-color: #FFFFFF;
-    padding: 0px 20px;
+    height: 55px;
+    /* border: 1px solid black; */
+   
 }
-.nav-content > .head-logo-div{
+
+/* ***** for main logo and search bar ***** */
+
+.nav-content > .head-logo-div{      
     display: flex;
     width: 350px;
     margin-top: 0.1rem;
@@ -21,39 +34,38 @@ body{
     align-items: center;
 }
 .head-logo{
-  width: 25px;
+  width: 35px;
 }
 .logo{
     margin: 5px;
     display: flex;
-    
-    /* background-color: #a6c90c; */
+
+}
+.head-search{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 2px;
+    background-color: #eef3f8;
+    border-radius: 0.3rem;
 
 }
 .search-input{
     width: 14rem;
-    height: 20px;
+    height: 35px;
     margin: 0px 5px;
     border: none;
     background-color: #eef3f8;
     border-radius: 0.3rem;
 
 }
-.head-search{
-    display: flex;
-    align-items: center;
-    height: 20px;
-    padding: 2px;
-    background-color: #eef3f8;
-    border-radius: 0.3rem;
+ /***** for navbar menu section --> nav menu items ***** */
 
-}
 .navbar{
     display: flex;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin-top: 0.1rem;
     width: 650px;
-    height: 45px;
     align-items: center;
   
 }
@@ -78,10 +90,9 @@ body{
     
     border-left: 0.1px solid black;
     margin-right: 15px;
-    height:45px;
+    height: 55px;
 
 }
-
 
  .nav-menu-item{
     display: flex;
@@ -92,6 +103,8 @@ body{
     width: 100px;
     font-size: 0.8rem;
 }
+
+/* ***** this is created for responsive design ***** */
  .hamburger{width: 40px;
 align-items: center;
 display: inline-flex;
@@ -121,3 +134,65 @@ justify-content: center;
     width: 100%;
 
 }
+
+/* **************** style for main section started *************** */
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+    text-align: center;
+column-gap: 2rem;
+border: 1px solid black;
+padding: 5rem;
+
+}
+
+ /***** style for left-section of  main-section ******/
+
+ .left-section{
+    border: 1px solid black;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-foreground{
+    border: 1px solid black;
+    background-image: url(./IMG/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10vh;
+}
+
+.let-section-profile-photo{
+    width: 5rem;
+    border-radius: 100%;
+    position: relative;
+    top: 25px;
+    border: 2px solid #fff;
+}
+.left-section-user-name{
+    position: relative;
+    top: 4rem;
+    font-size: var(--title-F-size);
+}
+.left-section-user-title{
+    font-size: large;
+    font-weight: 50px;
+    font-size: var(--sub_t_F-size);
+    color: var(--sub_t-color);
+}
+
+
+/***** style for middle-section of  main-section ******/
+.middle-section{
+    border: 1px solid black;
+    height: 150vh;  
+}
+
+/***** style for right-section of  main-section ******/
+.right-section{
+    border: 1px solid black;
+    height: 100vh;
+}
+
