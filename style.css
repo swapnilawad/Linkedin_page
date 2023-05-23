@@ -126,10 +126,10 @@ body{
     position: absolute;
     background-color: red;
     top: 5px;
-    margin-left: 20px;
+    margin-left: 22px;
     color: var(--bg-color);
     z-index: 4;
-    width: 10px;
+    width: 15px;
     height: 15px;
     align-items: center;
     display: flex;
