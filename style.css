@@ -17,6 +17,7 @@
 }
 body{
     background-color: #F3F2EF;
+    font-family: var(--font_fam);
 }
 
 /* ************** style for header section start   --> navbar ************* */
@@ -169,58 +170,94 @@ justify-content: center;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr ;
     text-align: center;
-column-gap: 2rem;
+    justify-content: center;
+column-gap: 1.5rem;
 /* border: 1px solid black; */
-padding: 5rem;
+padding: 2rem;
 
 }
 
  /***** style for left-section of  main-section ******/
 
- .left-secion-grid{
+ .left_secion_grid{
     border: 1px solid black;
+    height: 500px;
     display: flex;
     flex-direction: column;
     background-color: var(--bg-color);
+    border-radius: 10px;
 }
- .left-section-top{
-    border: 1px solid black;
+ .left_section_top{
+    /* border: 1px solid black; */
+    border-radius: 10px;
     height: 30vh;
     display: flex;
     flex-direction: column;
 }
 
-.profile-foreground{
-    border: 1px solid black;
+.profile_foreground{
+    /* border: 1px solid black; */
+    border-radius: 10px 10px 0px 0px;
     background-image: url(./IMG/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 10vh;
+    height: 80px;
 }
 
-.let-section-profile-photo{
+.let_section_profile_photo{
     width: 5rem;
     border-radius: 100%;
     position: relative;
     top: 25px;
     border: 2px solid #fff;
 }
-.left-section-user-name{
+.left_section_user_name{
     position: relative;
-    top: 4rem;
+    top: 55px;
     font-size: var(--title-F-size);
 }
-.left-section-user-title{
+.left_section_user_title{
     position: relative;
     font-size: large;
     font-weight: 50px;
     font-size: var(--sub_t_F-size);
     color: var(--sub_t-color);
 }
-.left-section-connection{
-    display: flex;
-    position: relative;
+.left_section_pannel{
+    display:flex ;
+    justify-content: space-between;
+    border: 1px solid black;
+    /* flex-direction: column; */
 }
+
+.left_pannel_1{
+
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1px 5px ;
+  
+    
+
+}
+.left_pannel_1 a{
+text-decoration: none;
+}
+.span_conn{
+    font-size: var(--sub_t_F-size);
+    color: var(--sub_t-color);
+}
+.span_grwo{
+    font-size: var(--sub_t_F-size);
+    font-weight: bolder;
+    color: var(--font_black_color); 
+}
+.span_profile{
+    font-size: var(--title-F-size);
+    color: var(--sub_t-color);
+}
+
 
 
 /***** style for middle-section of  main-section ******/
