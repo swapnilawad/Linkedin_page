@@ -1,9 +1,14 @@
 :root{
 
     --sub_t-color:#696464;
+    --bg_white_color:#ffffff;
+    --font_black_color:rgb(0,0,0);
     --title-F-size:20px;
     --sub_t_F-size:15px;
+    --font_fam:'Wix Madefor Display', sans-serif;
+
 }
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
 
 *{
     padding: 0;
@@ -18,7 +23,7 @@ body{
 .nav-content{
     display: flex;
     justify-content: space-around;
-    background-color: #FFFFFF;
+    background-color: var(--bg_white_color);
     height: 55px;
     /* border: 1px solid black; */
    
@@ -44,15 +49,15 @@ body{
 .head-search{
     display: flex;
     align-items: center;
-    height: 35px;
+    height: 30px;
     padding: 2px;
     background-color: #eef3f8;
     border-radius: 0.3rem;
 
 }
 .search-input{
-    width: 14rem;
-    height: 35px;
+    width: 250px;
+    height: 30px;
     margin: 0px 5px;
     border: none;
     background-color: #eef3f8;
@@ -62,8 +67,8 @@ body{
  /***** for navbar menu section --> nav menu items ***** */
 
 .navbar{
-    display: flex;
-    border: 1px solid black;
+    /* display: flex; */
+    /* border: 1px solid black; */
     margin-top: 0.1rem;
     width: 650px;
     align-items: center;
@@ -78,7 +83,7 @@ body{
 
 .nav-menu-img{
    
-    width: 20px;
+    width: 22.5px;
     padding: 2.5px;
 }
 .nav-menu-img-drop{
@@ -102,8 +107,36 @@ body{
     justify-content: center;
     width: 100px;
     font-size: 0.8rem;
+    color: var(--sub_t-color);
+    font-family: var(--font_fam);
+    z-index: 1;
 }
+ .nav-menu-item a {
 
+    color: var(--sub_t-color);
+    text-decoration: none;
+}
+ .nav-menu-item a:hover {
+
+    color: var(--font_black_color);
+    /* background-color: red; */
+}
+.msg_popup{
+    position: absolute;
+    background-color: red;
+    top: 5px;
+    margin-left: 20px;
+    color: var(--bg-color);
+    z-index: 4;
+    width: 15px;
+    height: 18px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.5px;
+}
 /* ***** this is created for responsive design ***** */
  .hamburger{width: 40px;
 align-items: center;
@@ -118,7 +151,7 @@ justify-content: center;
  .navbr-responsive{
     display: flex;
     display: none;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 0.1rem;
     width: 600px;
     height: 50px;
@@ -142,16 +175,22 @@ justify-content: center;
     grid-template-columns: 1fr 2fr 1fr ;
     text-align: center;
 column-gap: 2rem;
-border: 1px solid black;
+/* border: 1px solid black; */
 padding: 5rem;
 
 }
 
  /***** style for left-section of  main-section ******/
 
- .left-section{
+ .left-secion-grid{
     border: 1px solid black;
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+}
+ .left-section-top{
+    border: 1px solid black;
+    height: 30vh;
     display: flex;
     flex-direction: column;
 }
@@ -177,10 +216,15 @@ padding: 5rem;
     font-size: var(--title-F-size);
 }
 .left-section-user-title{
+    position: relative;
     font-size: large;
     font-weight: 50px;
     font-size: var(--sub_t_F-size);
     color: var(--sub_t-color);
+}
+.left-section-connection{
+    display: flex;
+    position: relative;
 }
 
 
