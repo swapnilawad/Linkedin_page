@@ -5,6 +5,7 @@
     --font_black_color:rgb(0,0,0);
     --title-F-size:20px;
     --sub_t_F-size:15px;
+    --small-font:12px;
     --font_fam:'Wix Madefor Display', sans-serif;
 
 }
@@ -128,14 +129,16 @@ body{
     margin-left: 20px;
     color: var(--bg-color);
     z-index: 4;
-    width: 15px;
-    height: 18px;
+    width: 10px;
+    height: 15px;
     align-items: center;
     display: flex;
     justify-content: center;
     color: #fff;
     border-radius: 10px;
     padding: 0.5px;
+    font-weight: bolder;
+    font-size: var(--small-font);
 }
 /* ***** this is created for responsive design ***** */
  .hamburger{width: 40px;
