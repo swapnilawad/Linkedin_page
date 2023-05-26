@@ -27,7 +27,11 @@ body{
     justify-content: space-around;
     background-color: var(--bg_white_color);
     height: 55px;
+    width: 100%;
     /* border: 1px solid black; */
+    position: fixed;
+    z-index: 5;
+   
    
 }
 
@@ -168,11 +172,12 @@ justify-content: center;
 
 .content{
     display: grid;
+    
     grid-template-columns: 1fr 2fr 1fr ;
     text-align: center;
     justify-content: center;
 column-gap: 1.5rem;
-/* border: 1px solid black; */
+border: 1px solid black;
 padding: 2rem;
 
 }
